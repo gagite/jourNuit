@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head> 
+        <meta charset="UTF-8" >
+        <title>jour nuit</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <img id="myImage" onclick="changeImage()" src="images/soleil.png" >
+
+        <script>
+            function changeImage() {
+                var image = document.getElementById('myImage');
+                if (image.src.match("lune")) {
+                    image.src = "images/soleil.png";
+                } else {
+                    image.src = "images/lune.png";
+                }
+            }
+        </script>
+
+    </body>
+</html>
